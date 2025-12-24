@@ -37,7 +37,7 @@ public class MinimaxAI {
                 int s = minimax(nb, true).score;
                 if (s < bestScore) {
                     bestScore = s;
-                    bestMove = mv;
+                    MinimalMove = mv;
                 }
             }
             return new Result(bestScore, bestMove);
